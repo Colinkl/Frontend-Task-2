@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 1270px) {
-    .header {
+    .welcome-header {
         z-index: 1;
         &_logo {
             width: 48px;
@@ -130,6 +130,48 @@
             font-size: 14px;
             line-height: 16px;
             color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    .sightseens {
+        padding-top: 88px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_container {
+            padding: 0 29px;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            margin-top: 55px;
+            &_img {
+                width: 100%;
+                align-self: center;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+            }
+            &_title {
+                margin-top: 25px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                text-decoration-line: underline;
+                color: #585858;
+            }
+            &_text {
+                margin-top: 28px;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+    .section-header {
+        &_title {
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 45px;
         }
     }
 }
