@@ -253,8 +253,6 @@
     padding: 29px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,22 +330,18 @@
     max-height: 650px;
     overflow: hidden;
     position: relative;
-    -webkit-transition: 5s;
-    transition: 5s;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .read-more-checker {
     display: none;
     position: absolute;
   }
   .read-more-checker:checked ~ .limiter {
-    max-height: 1500px;
-    -webkit-transition: 5s;
-    transition: 5s;
+    max-height: 2000px;
   }
   .read-more-checker:checked ~ .limiter .bottom {
     opacity: 0;
-    -webkit-transition: 5s;
-    transition: 5s;
   }
   .read-more-checker ~ .read-more-button:before {
     content: "Больше туров";
@@ -375,5 +369,32 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 33px;
+    padding: 0 29px;
+  }
+  .contacts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 55px;
   }
 }
