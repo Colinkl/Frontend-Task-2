@@ -332,22 +332,22 @@
     max-height: 650px;
     overflow: hidden;
     position: relative;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 5s;
+    transition: 5s;
   }
   .read-more-checker {
-    opacity: 0;
+    display: none;
     position: absolute;
   }
   .read-more-checker:checked ~ .limiter {
-    max-height: none;
-    -webkit-transition: .5s;
-    transition: .5s;
+    max-height: 1500px;
+    -webkit-transition: 5s;
+    transition: 5s;
   }
   .read-more-checker:checked ~ .limiter .bottom {
     opacity: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 5s;
+    transition: 5s;
   }
   .read-more-checker ~ .read-more-button:before {
     content: "Больше туров";
