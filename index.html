@@ -13,16 +13,16 @@
       <a href="/" class="welcome-header_logo">
         <img src="./img/logo.png" alt="Logo" />
       </a>
-      <span class="welcome-header_burger" onclick="menuButtonOnClick()">
+      <span class="welcome-header_burger" onclick="toggleMenu()">
         <span></span>
       </span>
     </header>
-    <nav class="menu menu-hidden">
+    <nav class="menu menu-hidden" onclick="toggleMenu()">
       <ul>
         <li><a href="#">Главная</a></li>
-        <li><a href="#">Достопримечательности</a></li>
-        <li><a href="#">Туры</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#sightseens">Достопримечательности</a></li>
+        <li><a href="#tours">Туры</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
     </nav>
     <div class="welcome">
@@ -31,7 +31,7 @@
         Туристическое Агенство Республики Хакасия
       </h2>
     </div>
-    <section class="sightseens">
+    <section id="sightseens" class="sightseens">
       <header class="section-header">
         <h3 class="section-header_title">Достопримечательности</h3>
       </header>
@@ -96,7 +96,7 @@
       </div>
     </section>
 
-    <section class="tours">
+    <section id="tours" class="tours">
       <header class="section-header">
         <h3 class="section-header_title">Туры</h3>
       </header>
@@ -159,7 +159,8 @@
       </div>
       <label for="read-more-checker" class="read-more-button"></label>
     </section>
-    <section class="contacts">
+
+    <section id="contacts" class="contacts">
       <header class="section-header">
         <h3 class="section-header_title">Контакты</h3>
       </header>

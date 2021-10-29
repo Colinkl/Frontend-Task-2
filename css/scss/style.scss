@@ -7,19 +7,24 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 1270px) {
   .welcome-header {
-    z-index: 1;
+    z-index: 2;
     &_logo {
       width: 48px;
       height: 43px;
     }
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
     width: 100%;
+    transition: background 0.3s;
     &_burger {
       display: flex;
       align-items: center;
@@ -67,10 +72,11 @@
     }
   }
   .menu {
+    z-index: 1;
     transition: opacity 0.3s;
     opacity: 1;
     display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: center;
     width: 100%;

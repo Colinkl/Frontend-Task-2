@@ -9,10 +9,14 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 1270px) {
   .welcome-header {
-    z-index: 1;
-    position: absolute;
+    z-index: 2;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -24,6 +28,8 @@
             align-items: center;
     padding: 25px;
     width: 100%;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
   }
   .welcome-header_logo {
     width: 48px;
@@ -81,13 +87,14 @@
     background: #111111;
   }
   .menu {
+    z-index: 1;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     opacity: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    position: fixed;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
