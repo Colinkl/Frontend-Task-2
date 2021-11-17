@@ -116,6 +116,7 @@ html {
   }
   .welcome {
     min-height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +138,31 @@ html {
       line-height: 16px;
       color: rgba(255, 255, 255, 0.5);
     }
+    &_arrow-down {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      animation-duration: 2s;
+      animation-name: up-down;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+    }
   }
+
+@keyframes up-down {
+  0% {
+    bottom: 20px;
+  }
+
+  50% {
+    bottom: 50px;
+  }
+
+  100% {
+    bottom: 20px;
+  }
+}
+
   .sightseens {
     padding-top: 88px;
     display: flex;

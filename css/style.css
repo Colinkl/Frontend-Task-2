@@ -138,6 +138,7 @@ html {
   }
   .welcome {
     min-height: 100vh;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -168,6 +169,41 @@ html {
     font-size: 14px;
     line-height: 16px;
     color: rgba(255, 255, 255, 0.5);
+  }
+  .welcome_arrow-down {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: up-down;
+            animation-name: up-down;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  @-webkit-keyframes up-down {
+    0% {
+      bottom: 20px;
+    }
+    50% {
+      bottom: 50px;
+    }
+    100% {
+      bottom: 20px;
+    }
+  }
+  @keyframes up-down {
+    0% {
+      bottom: 20px;
+    }
+    50% {
+      bottom: 50px;
+    }
+    100% {
+      bottom: 20px;
+    }
   }
   .sightseens {
     padding-top: 88px;
