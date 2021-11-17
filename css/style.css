@@ -169,7 +169,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../../img/background.jpg");
+  background-image: url("../../img/background-mobile.jpg");
   background-size: cover;
   background-position: center;
 }
