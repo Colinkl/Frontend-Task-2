@@ -13,25 +13,26 @@
       <a href="/" class="welcome-header_logo">
         <img src="./img/logo.png" alt="Logo" />
       </a>
-      <span class="welcome-header_burger" onclick="menuButtonOnClick()">
+      <span class="welcome-header_burger" onclick="toggleMenu()">
         <span></span>
       </span>
     </header>
-    <nav class="menu menu-hidden">
+    <nav class="menu menu-hidden" onclick="toggleMenu()">
       <ul>
         <li><a href="#">Главная</a></li>
-        <li><a href="#">Достопримечательности</a></li>
-        <li><a href="#">Туры</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#sightseens">Достопримечательности</a></li>
+        <li><a href="#tours">Туры</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
     </nav>
-    <div class="welcome">
+    <section class="welcome">
       <h1 class="welcome_title">Хакасия</h1>
       <h2 class="welcome_subtitle">
         Туристическое Агенство Республики Хакасия
       </h2>
-    </div>
-    <section class="sightseens">
+      <img class="welcome_arrow-down" src="./icons/arrowDown.svg" alt="" />
+    </section>
+    <section id="sightseens" class="sightseens">
       <header class="section-header">
         <h3 class="section-header_title">Достопримечательности</h3>
       </header>
@@ -42,7 +43,7 @@
             alt="City"
             class="sightseens-item_img"
           />
-          <h4 class="sightseens-tours-=item_title">Тропа предков</h4>
+          <h4 class="sightseens-item_title">Тропа предков</h4>
           <p class="sightseens-item_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             pretium orci at rutrum pellentesque. Vivamus id nunc at ante
@@ -61,7 +62,7 @@
             alt="City"
             class="sightseens-item_img"
           />
-          <h4 class="sightseens-tours-=item_title">Приисковый</h4>
+          <h4 class="sightseens-item_title">Приисковый</h4>
           <p class="sightseens-item_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             pretium orci at rutrum pellentesque. Vivamus id nunc at ante
@@ -80,7 +81,7 @@
             alt="City"
             class="sightseens-item_img"
           />
-          <h4 class="sightseens-tours-=item_title">Сундуки</h4>
+          <h4 class="sightseens-item_title">Сундуки</h4>
           <p class="sightseens-item_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             pretium orci at rutrum pellentesque. Vivamus id nunc at ante
@@ -96,7 +97,7 @@
       </div>
     </section>
 
-    <section class="tours">
+    <section id="tours" class="tours">
       <header class="section-header">
         <h3 class="section-header_title">Туры</h3>
       </header>
@@ -156,17 +157,59 @@
             </div>
           </div>
         </div>
-        <div class="bottom"></div>
       </div>
       <label for="read-more-checker" class="read-more-button"></label>
-
-      
     </section>
-    <section class="contacts">
+
+    <section id="contacts" class="contacts">
       <header class="section-header">
         <h3 class="section-header_title">Контакты</h3>
       </header>
+      <li class="contacts-list">
+        <span class="contacts-item">
+          <img
+            src="/icons/contacts/point.svg"
+            alt="point"
+            class="contacts-item_icon"
+          />
+          <p class="contacts-item_text">
+            655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67
+          </p>
+        </span>
+        <span class="contacts-item">
+          <img
+            src="/icons/contacts/phone.svg"
+            alt="phone"
+            class="contacts-item_icon"
+          />
+          <p class="contacts-item_text">
+            8 (3902) 22-53-35 <br />
+            <br />
+            8 (3902) 24-30-71
+          </p>
+        </span>
+        <span class="contacts-item">
+          <img
+            src="/icons/contacts/mail.svg"
+            alt="mail"
+            class="contacts-item_icon"
+          />
+          <p class="contacts-item_text">kancler@vskhakasia.ru</p>
+        </span>
+      </li>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A201114d18ebf2a8eef42fb03398ba3f529ca65eec7328e8254897803986aa868&amp;source=constructor"
+        width="100%"
+        height="400"
+        frameborder="0"
+        class="contacts-map"
+      ></iframe>
     </section>
+    <footer class="footerweb">
+        <p class="footerweb-text">
+            Официальный сайт Агенства Туризма Республики Хакасия © 2021
+        </p>
+    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>
