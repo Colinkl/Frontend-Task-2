@@ -498,6 +498,9 @@ html {
 
 .contacts-map {
   margin-top: 50px;
+  width: 100%;
+  height: 400;
+  frameborder: 0;
 }
 
 .footerweb {
