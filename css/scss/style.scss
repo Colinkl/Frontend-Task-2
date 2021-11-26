@@ -347,6 +347,10 @@ html {
         &_text {
             margin-left: 20px;
         }
+        &_link {
+            text-decoration: none;
+            color: #000000;
+        }
     }
     &-map {
         margin-top: 50px;
@@ -359,11 +363,10 @@ html {
     padding-top: 140px;
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
-    
     &-text {
         padding: 23px 16px 23px 16px;
-        align-items: center;
         background-color: #000000;
         color: #fff;
         font-family: Roboto;
