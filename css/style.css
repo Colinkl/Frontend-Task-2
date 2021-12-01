@@ -497,6 +497,11 @@ html {
   margin-left: 20px;
 }
 
+.contacts-item_link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .contacts-map {
   margin-top: 50px;
   width: 100%;
@@ -513,6 +518,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -520,9 +526,6 @@ html {
 
 .footerweb-text {
   padding: 23px 16px 23px 16px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #000000;
   color: #fff;
   font-family: Roboto;
