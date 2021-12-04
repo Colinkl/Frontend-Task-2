@@ -490,23 +490,64 @@ html {
           flex-direction: row;
   -ms-grid-row: 1;
   grid-row: 1;
-  margin-top: 15px;
+}
+
+.contacts-item_phonelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contacts-item_text {
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .contacts-item_link {
   text-decoration: none;
+  width: 100%;
   color: #000000;
+}
+
+.contacts-item_icon_address {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../icons/contacts/point.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts-item_icon_phone {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../icons/contacts/phone.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts-item_icon_mail {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../icons/contacts/mail.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .contacts-map {
   margin-top: 50px;
   width: 100%;
   height: 400;
-  frameborder: 0;
 }
 
 .footerweb {
