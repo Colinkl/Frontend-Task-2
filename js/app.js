@@ -24,7 +24,7 @@ function init() {
     }
 
     if (window.innerWidth > 1270) {
-        toggleMenu();
+        menu.classList.remove(menu.classList[0] + "-hidden")
     }
 
     button.addEventListener('click', toggleMenu);
