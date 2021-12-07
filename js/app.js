@@ -7,12 +7,28 @@ function init() {
     let isHeaderBlack = false;
 
     function toggleMenu() {
+        if (window.innerWidth > 1270) return;
         menu.classList.toggle(menu.classList[0] + "-hidden");
         button.classList.toggle(button.classList[0] + "-active");
     }
 
+    window.addEventListener("resize", onResize)
+
+    function onResize() {
+        if (window.innerWidth > 1270) {
+            menu.classList.remove(menu.classList[0] + "-hidden")
+        } else {
+            menu.classList.add(menu.classList[0] + "-hidden")
+            button.classList.remove(button.classList[0] + "-active")
+        }
+    }
+
+    if (window.innerWidth > 1270) {
+        toggleMenu();
+    }
+
     button.addEventListener('click', toggleMenu);
-    menu.addEventListener('click', toggleMenu);
+    menu.addEventListener('click', toggleMenu)
 
     window.addEventListener('scroll', function() {
         if (this.scrollY >= this.window.innerHeight - 50 && !isHeaderBlack) {
