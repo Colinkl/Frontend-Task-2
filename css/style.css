@@ -38,6 +38,7 @@ html {
 }
 
 .welcome-header_burger {
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +100,8 @@ html {
 }
 
 .menu {
+  top: 0px;
+  left: 0px;
   z-index: 1;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
@@ -575,4 +578,89 @@ html {
   font-size: 14px;
   line-height: 16px;
   width: 100%;
+}
+
+@media (min-width: 1270px) {
+  .welcome-header {
+    position: absolute;
+    padding: 44px 130px;
+  }
+  .welcome-header_logo {
+    width: 80px;
+    height: 72px;
+    background-image: url("../../img/logo-desk.png");
+  }
+  .welcome-header_burger {
+    display: none;
+  }
+  .menu {
+    position: unset;
+    height: unset;
+    width: unset;
+    background-color: unset;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menu li {
+    margin: 0px 20px;
+  }
+  .welcome {
+    background-image: url("../../img/background-desk.jpg");
+  }
+  .section-header_title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .sightseens {
+    background-color: #eeeeee;
+  }
+  .sightseens_container {
+    width: 1180px;
+    padding: 0;
+  }
+  .sightseens-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 55px;
+  }
+  .sightseens-item_img {
+    width: 380px;
+    margin-right: 20px;
+  }
+  .sightseens-item_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sightseens-item_title {
+    margin: 0;
+  }
+  .sightseens-item_text {
+    width: 700px;
+  }
+  .sightseens-item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sightseens-item:last-child {
+    margin-bottom: 100px;
+  }
 }
