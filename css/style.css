@@ -328,7 +328,7 @@ html {
 .tours-item {
   margin-top: 16px;
   width: 100%;
-  height: 300px;
+  height: 380px;
   padding: 29px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -426,7 +426,7 @@ html {
 }
 
 .read-more-checker:checked ~ .limiter {
-  max-height: 2000px;
+  max-height: none;
 }
 
 .read-more-checker:checked ~ .limiter .bottom {
@@ -524,27 +524,33 @@ html {
 }
 
 .contacts-item_icon_address {
+  background-image: url("../../icons/contacts/point.svg");
   width: 20px;
   height: 20px;
-  background-image: url("../../icons/contacts/point.svg");
   background-size: cover;
   background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .contacts-item_icon_phone {
+  background-image: url("../../icons/contacts/phone.svg");
   width: 20px;
   height: 20px;
-  background-image: url("../../icons/contacts/phone.svg");
   background-size: cover;
   background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .contacts-item_icon_mail {
+  background-image: url("../../icons/contacts/mail.svg");
   width: 20px;
   height: 20px;
-  background-image: url("../../icons/contacts/mail.svg");
   background-size: cover;
   background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .contacts-map {
@@ -662,5 +668,48 @@ html {
   }
   .sightseens-item:last-child {
     margin-bottom: 100px;
+  }
+  .tours_container {
+    margin-top: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tours-item {
+    width: 380px;
+    margin: 20px;
+  }
+  .limiter {
+    max-height: none;
+  }
+  .read-more-button {
+    display: none;
+  }
+  .contacts_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+  .contacts-list {
+    width: 500px;
+  }
+  .contacts-map {
+    width: 780px;
+    height: 400px;
   }
 }
