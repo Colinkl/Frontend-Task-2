@@ -572,11 +572,19 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 23px 16px 23px 16px;
+  background: #242424;
+}
+
+.footerweb-menu {
+  display: none;
+}
+
+.footerweb-contacts {
+  display: none;
 }
 
 .footerweb-text {
-  padding: 23px 16px 23px 16px;
-  background-color: #000000;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
@@ -706,6 +714,7 @@ html {
     margin-left: 140px;
     margin-right: 140px;
     width: 1180px;
+    margin-bottom: 70px;
   }
   .contacts-list {
     width: 500px;
@@ -713,5 +722,81 @@ html {
   .contacts-map {
     width: 780px;
     height: 400px;
+  }
+  .footerweb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 23px 16px 23px 16px;
+  }
+  .footerweb-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+  .footerweb-menu_header {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .footerweb-menu_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-weight: 200;
+  }
+  .footerweb-menu_item {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .footerweb-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    line-height: 16px;
+    color: #e1e1e1;
+  }
+  .footerweb-contacts_header {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .footerweb-contacts_text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #e1e1e1;
+  }
+  .footerweb-text {
+    margin-left: 130px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }

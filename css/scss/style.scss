@@ -363,7 +363,6 @@ html {
             color: #000000;
         }
         &_icon {
-
             &_address {
                 background-image: url("../../icons/contacts/point.svg");
                 width: 20px;
@@ -409,9 +408,15 @@ html {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    padding: 23px 16px 23px 16px;
+    background: #242424;
+    &-menu {
+        display: none;
+    }
+    &-contacts {
+        display: none;
+    }
     &-text {
-        padding: 23px 16px 23px 16px;
-        background-color: #000000;
         color: #fff;
         font-family: Roboto;
         font-style: normal;
@@ -511,7 +516,6 @@ html {
 
     .read-more-button {
         display: none;
-
     }
 
     .contacts {
@@ -522,6 +526,7 @@ html {
             margin-left: 140px;
             margin-right: 140px;
             width: 1180px;
+            margin-bottom: 70px;
         }
         &-list {
             width: 500px;
@@ -529,6 +534,59 @@ html {
         &-map {
             width: 780px;
             height: 400px;
+        }
+    }
+    .footerweb {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: flex-start;
+        padding: 23px 16px 23px 16px;
+        &-menu {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #ffffff;
+            &_header {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            &_list {
+                display: flex;
+                flex-direction: column;
+                font-weight: 200;
+            }
+
+            &_item {
+                text-decoration: none;
+                margin-bottom: 10px;
+                color: #ffffff;
+            }
+        }
+        &-contacts {
+            flex-direction: column;
+            display: flex;
+            font-size: 14px;
+            line-height: 16px;
+            color: #e1e1e1;
+            &_header {
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+
+            &_text {
+                font-size: 14px;
+                line-height: 16px;
+
+                color: #e1e1e1;
+            }
+        }
+        &-text {
+            margin-left: 130px;
+            width: max-content;
         }
     }
 }
