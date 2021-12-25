@@ -685,14 +685,16 @@ html {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 1400px;
+    max-width: 1400px;
   }
   .tours-item {
     width: 380px;
     margin: 20px;
+    padding: auto;
   }
   .limiter {
     max-height: none;

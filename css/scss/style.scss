@@ -500,13 +500,16 @@ html {
             margin-top: 60px;
             flex-direction: row;
             flex-wrap: wrap;
+            padding: 0;
+
             justify-content: center;
-            width: 1400px;
+            max-width: 1400px;
         }
 
         &-item {
             width: 380px;
             margin: 20px;
+            padding: auto;
         }
     }
 
